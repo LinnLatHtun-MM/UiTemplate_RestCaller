@@ -1,0 +1,754 @@
+{
+	"info": {
+		"_postman_id": "489fd9db-66b3-468e-aaff-7345e9f987db",
+		"name": "UI Template Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Caller",
+			"item": [
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callRequestBodyURL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Linn lat htun\",\r\n    \"address\": \"Ygn\",\r\n    \"phNo\": \"09386\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callRequestBodyURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callRequestBodyURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callRequestBodyObjListURL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeList\": [\r\n        {\r\n            \"name\": \"Linn lat htun\",\r\n            \"address\": \"Ygn\",\r\n            \"phNo\": \"09386\"\r\n        },\r\n        {\r\n            \"name\": \"Linn lat htun\",\r\n            \"address\": \"Ygn\",\r\n            \"phNo\": \"09386\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callRequestBodyObjListURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callRequestBodyObjListURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callRequestBodyStringListURL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stringList\": [\r\n        \"Linn Lat Htun\",\r\n        \"Linn\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callRequestBodyStringListURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callRequestBodyStringListURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callPathVariableWithIdURL/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callPathVariableWithIdURL/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callPathVariableWithIdURL",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callMultiplePathVariableURL/1/Linn Lat Htun",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callMultiplePathVariableURL/1/Linn Lat Htun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callMultiplePathVariableURL",
+								"1",
+								"Linn Lat Htun"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callRequestParamURL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callRequestParamURL?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callRequestParamURL"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callMultipleRequestParamURL?id=1&name=Linn Lat Htun",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callMultipleRequestParamURL?id=1&name=Linn Lat Htun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callMultipleRequestParamURL"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "Linn Lat Htun"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callPathVariableAndParamsURL/1?name=Linn Lat Htun",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callPathVariableAndParamsURL/1?name=Linn Lat Htun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callPathVariableAndParamsURL",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Linn Lat Htun"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callFromHeaderAndParamURL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callFromHeaderAndParamURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callFromHeaderAndParamURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callFromHeaderURL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callFromHeaderURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callFromHeaderURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/callFromHeaderAndBodyURL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/callFromHeaderAndBodyURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"callFromHeaderAndBodyURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/fileUploadURL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Linn Lat/Downloads/TWS_Documents_ESB.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/fileUploadURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"fileUploadURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/uitemplate-caller/fromHeaderAndBulkFileUpload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/uitemplate-caller/fromHeaderAndBulkFileUpload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"uitemplate-caller",
+								"fromHeaderAndBulkFileUpload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Receiver",
+			"item": [
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestBodyObjectURL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Linn lat htun\",\r\n    \"address\": \"Ygn\",\r\n    \"phNo\": \"09386\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestBodyObjectURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestBodyObjectURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestBodyObjectListURL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeList\": [\r\n        {\r\n            \"name\": \"Linn lat htun\",\r\n            \"address\": \"Ygn\",\r\n            \"phNo\": \"09386\"\r\n        },\r\n        {\r\n            \"name\": \"Linn lat htun\",\r\n            \"address\": \"Ygn\",\r\n            \"phNo\": \"09386\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestBodyObjectListURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestBodyObjectListURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestBodyStringListURL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stringList\": [\r\n        \"Linn Lat Htun\",\r\n        \"Linn\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestBodyStringListURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestBodyStringListURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestPathVariableURL/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestMultiPathVariablesURL/1/Linn Lat Htun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestMultiPathVariablesURL",
+								"1",
+								"Linn Lat Htun"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestParamURL/?id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestParamURL/?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestParamURL",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestMultiParamsURL/?id=1&name=Linn Lat Htun",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestMultiParamsURL/?id=1&name=Linn Lat Htun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestMultiParamsURL",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "Linn Lat Htun"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestPathVariableAndParamsURL/1/?name=Linn Lat Htun",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestPathVariableAndParamsURL/1/?name=Linn Lat Htun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestPathVariableAndParamsURL",
+								"1",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Linn Lat Htun"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestFromHeaderURL",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "default"
+							},
+							{
+								"key": "name",
+								"value": "Linn Lat Htun",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestFromHeaderURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestFromHeaderURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestFromHeaderAndRequestParamURL?name=Linn Lat Htun",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "2",
+								"type": "default"
+							},
+							{
+								"key": "address",
+								"value": "Yangon",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestFromHeaderAndRequestParamURL?name=Linn Lat Htun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestFromHeaderAndRequestParamURL"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Linn Lat Htun"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestFromHeaderAndRequestBodyURL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Linn lat htun\",\r\n    \"address\": \"Ygn\",\r\n    \"phNo\": \"09386\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestFromHeaderAndRequestBodyURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestFromHeaderAndRequestBodyURL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestPathVariableURL/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestPathVariableURL/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestPathVariableURL",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestFileUploadURL?=",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Linn Lat/Downloads/TWS_Documents_ESB.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestFileUploadURL?file=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestFileUploadURL"
+							],
+							"query": [
+								{
+									"key": "file",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/uitemplate-receiver/api/requestFromHeaderAndBulkFileUploadURL",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "name",
+								"value": "Linn Lat Htun",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Linn Lat/Downloads/TWS_Documents_ESB.xlsx"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Linn Lat/Downloads/TWSSpec_EsbCorpCommonTxn.docx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/uitemplate-receiver/api/requestFromHeaderAndBulkFileUploadURL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"uitemplate-receiver",
+								"api",
+								"requestFromHeaderAndBulkFileUploadURL"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
